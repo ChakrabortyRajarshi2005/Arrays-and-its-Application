@@ -1,0 +1,13 @@
+Current Sum in an Array LeetCode :
+class Solution {
+    public int[] runningSum(int[] nums) {
+        int sum = 0;
+        int n = nums.length;
+        int curr_sum [] = new int [n];
+        for (int i = 0; i < n; i++) {
+            sum += nums[i];
+            curr_sum[i] = sum;
+        }
+        return curr_sum;
+    }
+}
